@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="350"
+            android:id="@+id/textView"
+            android:textSize="60sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:elevation="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Calories Burned"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="-3dp"/>
+
+    <Spinner android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editText"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:background="@color/opaqueWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="reps"
+            android:layout_gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="-2dp"
+            android:id="@+id/textView3"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="-8dp"/>
+
+</LinearLayout>
